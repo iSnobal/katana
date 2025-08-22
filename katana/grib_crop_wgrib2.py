@@ -196,7 +196,7 @@ def create_new_grib(date_list, directory, out_dir,
         outputs new hrrr grib2 files in out_dir
     """
 
-    fx_start_hour = 0
+    fx_start_hour = 1
 
     logger.info('Creating new gribs for topo domain')
 
@@ -256,7 +256,7 @@ def create_new_grib(date_list, directory, out_dir,
     return out_files
 
 
-def hrrr_file_name_finder(base_path, date, fx_hr=0):
+def hrrr_file_name_finder(base_path, date, fx_hr):
     """
     Find the file pointer for a hrrr file with a specific forecast hour
 
